@@ -117,19 +117,21 @@ padding: 0px;}
 /* контакти */
 
 .info {display: flex;
-align-items: baseline;}
+align-items: center;}
  
 .info {margin-left: auto;}
 
 .info .info-contackt:last-child {margin-left: 30px;}
 
 .info .contackts {
+display: flex;
+align-items: center;
     
 padding-top: 32px;
 padding-bottom: 32px;
 font-weight: 500;
 font-size: 14px;
-line-height: 2.0;
+line-height: 1.14;
 letter-spacing: 0.03em;
 color: var(--contacts-coluor);}
 
@@ -161,8 +163,10 @@ color: #188CE8; }
 }
 
 .about {
+    width: 1600px;
     background-image: linear-gradient(var(--linear-gradient-about--), var(--linear-gradient-about--));
     background-image: url(../img/Img.svg) ;
+    background-repeat: no-repeat;
     
 }
 
@@ -267,7 +271,8 @@ padding-top: 25px;
         height: 70px;
         margin: 25px;}
 
-        .block-about:hover {border-color: #188CE8;} 
+        .block-about:hover {border-color: var(--button-active)} 
+        .block-about:focus {border-color: var(--button-active)}
 
 
 /* -- чим ми займаємось-- */
@@ -351,9 +356,11 @@ box-shadow: var(--box-shadow-cart);
             border-radius: 50%;
         }
 
-        .team .a-social:hover { background-color: var(--button-active);
-        }
+        .team .a-social:hover { background-color: var(--button-active);}
+        .team .a-social:hover {background-color: var(--button-active); }
+        
         .team .a-social:hover use {fill: #FFFFFF;}
+        .team .a-social:focus use {fill: #FFFFFF;}
         
 /* постійний клієнт*/
 
@@ -394,10 +401,13 @@ padding: 0px;}
     fill: var(--company-colour--);
     padding: 18px 32px;}
   
-.company-svg:hover ,
+.company-svg:hover {fill: var(--minor-colour);}
 .company-svg:focus { fill: var(--minor-colour);}
 
-.client .company-a:hover,
+.client .company-a:hover{ 
+border-color: var(--minor-colour);
+fill: var(--minor-colour);}
+
 .client .company-a:focus {
 border-color:var(--minor-colour);
 fill: var(--minor-colour);}
@@ -485,8 +495,8 @@ font-family: 'Roboto';
 font-style: normal;
 }
 
-.conteiner-flex {display: flex;}
-
+.conteiner-flex {display: flex;
+    align-items: baseline;}
 
 
 
@@ -545,7 +555,7 @@ font-style: normal;
 
    
     
-    .footer2 {margin-top: 10px;}
+    
 
     .gogo {
         
@@ -576,5 +586,7 @@ font-style: normal;
         background-color: var(--icon-footer--);}
 
         .a-communic:hover {background-color: var(--minor-colour);}
+        .a-communic:focus { background-color: var(--minor-colour);
+                 }
 
         .svg-communic {fill: var(--text-wite);}
