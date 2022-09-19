@@ -262,19 +262,18 @@ padding-top: 25px;
     
         .block-about { 
         text-align: center;
-        width: 268px;
+        width: 270px;
         height: 120px; 
         background-color: var(--button-colour);
         border-radius: 4px ;
-        border: 1px solid #F5F4FA;
+        
         margin-bottom: 30px;}
         
         .block-svg { width: 65px;
         height: 70px;
         margin: 25px;}
 
-        .block-about:hover {border-color: var(--button-active)} 
-        .block-about:focus {border-color: var(--button-active)}
+        
 
 
 /* -- чим ми займаємось-- */
